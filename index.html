@@ -26,14 +26,169 @@
   </head>
   <body>
     <div class="page">
-      <header class="header"></header>
+      <header class="header">
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="Imagen de fondo del encabezado"
+          class="header__image"
+        />
+
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Logotipo de la cafetería"
+            class="nav__logo"
+          />
+          <div class="nav__links">
+            <a href="#recipes" class="nav__link">Recetas</a>
+            <a href="#reservation" class="nav__link">Reservar una mesa</a>
+            <a href="#contacts" class="nav__link">Contactos</a>
+          </div>
+        </nav>
+
+        <h1 class="header__title">
+          <span class="span-accent-accented">Café de especialidad</span><br />
+          <span class="span-accent-secondary">en Triple Peaks</span>
+        </h1>
+        <p class="description">
+          ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+          para darte energía y motivar tu creatividad.
+        </p>
+
+        <footer class="header__footer">
+          <div class="header__info">
+            <p class="header__schedule">
+              Horario:<br />
+              Lunes a Viernes (de 10:00h a 19:00h)<br />
+              Sábados y Domingos (de 11:00h a 18:00h)
+            </p>
+          </div>
+        </footer>
+        <p class="header__address">
+          Avenida del Éxito 200, Ciudad Triple Peaks
+        </p>
+      </header>
 
       <main class="content">
-        <section class="recipes"></section>
-        <section class="reservation"></section>
-      </main>
+        <section class="recipes" id="recipes">
+          <h2 class="recipes__title">Recetas</h2>
 
-      <footer class="footer"></footer>
+          <p class="recipes__subtitle">
+            Echa un vistazo a las recetas que hemos reunido para que elabores
+            tus propios snacks.
+          </p>
+
+         <div class="recipes__videos">
+  <figure class="recipes__video-item">
+    <iframe
+      class="recipes__iframe"
+      src="https://www.youtube.com/embed/j6VlT_jUVPc?si=vW8YPhmJls86rOz_"
+      title="Receta en Aeropress"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <figcaption class="recipes__video-caption">
+      Receta en Aeropress ~5 min
+    </figcaption>
+  </figure>
+
+  <figure class="recipes__video-item">
+    <iframe
+      class="recipes__iframe"
+      src="https://www.youtube.com/embed/st571DYYTR8?si=YJXlW7u0Ejl8GTmr"
+      title="Receta en cafetera francesa"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <figcaption class="recipes__video-caption">
+      Receta en cafetera francesa ~15 min
+    </figcaption>
+  </figure>
+</div>
+
+
+            </div>
+          </div>
+        </section>
+
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar una mesa</h2>
+
+          <form class="reservation__form" action="#" method="post" novalidate>
+            <label class="reservation__label" for="name">Nombre *</label>
+            <input
+              class="reservation__input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nombre"
+              required
+            />
+
+            <label class="reservation__label" for="guests"
+              >Número de comensales *</label
+            >
+            <input
+              class="reservation__input"
+              type="number"
+              id="guests"
+              name="guests"
+              min="1"
+              max="8"
+              placeholder="1-8"
+              required
+            />
+            <label class="reservation__label" for="datetime"
+              >Fecha y hora *</label
+            >
+            <input
+              class="reservation__input"
+              type="datetime-local"
+              id="datetime"
+              name="datetime"
+              required
+            />
+
+            <label class="reservation__label" for="email"
+              >Tu correo electrónico *</label
+            >
+            <input
+              class="reservation__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@email.com"
+              required
+            />
+
+            <label class="reservation__checkbox-label">
+              <input class="reservation__checkbox" type="checkbox" required />
+              Acepto los términos de uso
+            </label>
+
+            <button class="reservation__button" type="submit">
+              Reservar una mesa
+            </button>
+          </form>
+        </section>
+      </main>
+<section class="contacts" id="contacts">
+      <footer class="footer">
+        <h2 class="footer__title">Redes sociales</h2>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="contacts" class="footer__social-link">Facebook</a>
+          </li>
+          <li class="footer__social-item">
+            <a href="contacts" class="footer__social-link">Instagram</a>
+          </li>
+        </ul>
+        <p class="footer__copyright">© 2024 Carlos Molina</p>
+      </footer>
+      </section>
     </div>
   </body>
 </html>
+
