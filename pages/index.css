@@ -79,7 +79,7 @@
   color: #000000; /* Ajusta el color si quieres */
 }
 
-.description {
+.header__description {
   position: absolute;
   top: 420px;
   left: 80px;
